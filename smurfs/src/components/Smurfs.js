@@ -7,8 +7,8 @@ export const Smurfs = ({ smurfs }) => {
                 return (
                     <div className='smurf' key={smurf.id}>
                         <strong>{smurf.name}</strong>
-                        <p>{smurf.age}</p>
-                        <p>{smurf.height}</p>
+                        <div>{smurf.age}</div>
+                        <div>{smurf.height}</div>
                     </div>
                 )
             })}

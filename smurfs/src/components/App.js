@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import { Smurfs } from './Smurfs'
+import SmurfForm from './SmurfForm'
 
 import { connect } from 'react-redux'
 import { getSmurfs } from '../actions'
@@ -17,6 +18,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>SMURFS! 2.0 W/ Redux</h1>
+        <SmurfForm />
         <Smurfs smurfs={this.props.smurfs} />
       </div>
     );
